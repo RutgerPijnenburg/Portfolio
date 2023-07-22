@@ -10,7 +10,7 @@ html {
 body {
   margin: 0;
   padding-top: 4.1rem;
-  background-color: white;
+  background-color: #6989c9;
 }
 .Navigation-Spacer {
   flex: 1;
@@ -45,7 +45,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   transition: all 0.2s ease;
-  color: black;
+  color: white;
   padding: 10px;
 }
 
@@ -71,11 +71,6 @@ a {
   opacity: 60%;
 }
 
-.Navigation-Element a:hover {
-  text-decoration: none;
-  color: black;
-}
-
 .Hero-Button {
   padding: 5px;
   background-color: transparent;
@@ -86,7 +81,80 @@ a {
 }
 
 .Hero-Button:hover {
-  background-color: rgba(255, 255, 255, 0.4);
   opacity: 60%;
   cursor: pointer;
+}
+
+.Overflow-Image {
+  width: 100%;
+  object-fit: contain;
+  object-position: 65%;
+  object-position: 50%;
+  overflow-y: scroll;
+}
+
+.Overflow-Box {
+  top: 0px;
+  left: 50%;
+  right: 0%;
+  position: absolute;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.CaptionBox {
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  text-align: center;
+  bottom: 3%;
+}
+
+.Caption {
+  color: white;
+}
+
+.Caption2 {
+  font-size: smaller;
+  color: black;
+}
+
+.Text {
+  color: white;
+  font-weight: normal;
+}
+
+.Title {
+  color: white;
+  font-size: xx-large;
+  padding-bottom: 10px;
+}
+
+.Column {
+  position: absolute;
+  left: 0%;
+  right: 50%;
+  top: 10%;
+  bottom: 0px;
+  padding: 3%;
+}
+
+.Buttons {
+  left: 50%;
+  right: 0%;
+  bottom: 5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 3%;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 80%;
 }
